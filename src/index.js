@@ -12,7 +12,9 @@ import {
 
 import Header from "./Components/Header/header";
 import ToDoList from "./Components/ToDoList/toDoList";
-
+// import AddToDo from "./Components/AddToDo/addToDo";
+// import EditToDo from "./Components/EditContact/editContact";
+import Error404 from "./Components/Error404/error404";
 
 //REDUX store
 import store from "./store";
@@ -27,6 +29,7 @@ class App extends Component {
             <Switch>
               <Route path="/" exact component={ToDoList} />
               {/* <Route path="/add-todo" exact component={AddDoList} /> */}
+              <Route component ={Error404} /> 
             </Switch>
           </Router>
       </Provider> 
