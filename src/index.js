@@ -12,7 +12,7 @@ import {
 
 import Header from "./Components/Header/header";
 import ToDoList from "./Components/ToDoList/toDoList";
-// import AddToDo from "./Components/AddToDo/addToDo";
+import AddToDo from "./Components/AddToDo/addToDo";
 // import EditToDo from "./Components/EditContact/editContact";
 import Error404 from "./Components/Error404/error404";
 
@@ -28,7 +28,7 @@ class App extends Component {
           <Header /> 
             <Switch>
               <Route path="/" exact component={ToDoList} />
-              {/* <Route path="/add-todo" exact component={AddDoList} /> */}
+              <Route path="/add-todo" exact component={AddToDo} />
               <Route component ={Error404} /> 
             </Switch>
           </Router>
