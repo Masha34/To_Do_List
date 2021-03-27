@@ -14,8 +14,8 @@ const ToDoList = ({List, getAllList}) => {
             // console.log("data ===>>", data);
             getAllList(data);
         })
-    // }, [])
-    })
+    }, [])
+    // })
     const item = List.map(contact => {
          return(
              <ToDoListItem todoDescription={contact.todoDescription} Deadline={contact.Deadline} />

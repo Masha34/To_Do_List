@@ -13,9 +13,9 @@ export const addNewTask = (todoList) => {
         payload: todoList  
     }
 }
-// export const addNewItem = (item) => {
-//     return {
-//         type: "ADD_NEW_ITEM",
-//         payload: item
-//     }
-// }
+export const deleteTask = (todoList) => {
+    return {
+        type: "DELETE_TASK",
+        payload: todoList  
+    }
+}

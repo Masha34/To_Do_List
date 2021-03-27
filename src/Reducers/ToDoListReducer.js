@@ -14,6 +14,10 @@ const ToDoListReducer = (state = initialState, action) => {
                     ...state.List,
                     action.payload]
             }
+        case "DELETE_TASK":  
+            return {
+                List: action.payload
+            }
         default:
             return state;
     }

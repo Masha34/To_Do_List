@@ -73,9 +73,7 @@ class AddToDo extends React.Component {
                 <Redirect to="/" />
             )
         }
-        // const URL = `https://randomuser.me/api/portraits/${Gender}/${Avatar}.jpg`;
-        // console.log(Name)
-        // console.log("State ", this.state)
+
         return(
             <Fragment>
                 <div className="container">
