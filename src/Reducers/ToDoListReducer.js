@@ -4,7 +4,7 @@ const initialState = {
 
 const ToDoListReducer = (state = initialState, action) => {
     switch (action.type) {
-        case "TODO_LIST_LOADED":  //контакт ліст з бази
+        case "TASK_LIST_LOADED":  //контакт ліст з бази
             return {
                 List: action.payload
             }

@@ -1,3 +1,13 @@
+// Додати справу
+
+// Відмітити як виконану
+// Видалити
+// Редагувати
+// Пошук
+// =================
+// Дедлайн: 
+// Firebase
+
 import React, {Component} from "react";
 
 import ReactDOM from "react-dom";

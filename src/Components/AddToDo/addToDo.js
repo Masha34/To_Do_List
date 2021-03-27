@@ -51,8 +51,7 @@ class AddToDo extends React.Component {
 
     //     // const { onAddContact } = this.props;
     //     const { List } = this.props;
-        
-       
+      
     //     // List.push(newContact)
 
     //      // addNewContact
@@ -64,32 +63,6 @@ class AddToDo extends React.Component {
     //         isRedirect: true
     //     })
     // }
-
-
-//     addNewTasks = (event) => {
-//         event.preventDefault();
-//         // console.log("addNewTask");
-//         const { todoDescription, Deadline } = this.state;
-    
-//         const newTask = { todoDescription, Deadline };
-//         // console.log("newTask = ", newTask)
-
-//         const { ToDoList, addNewTask } = this.props;
-//         addNewTask(newTask);
-//         ToDoList.push(newTask);
-       
-//         // List.push(newContact)
-
-//          // addNewContact
-//         //  const newList = [...List, newContact]
-
-//         // onAddContact(newContact);
-//         saveData(ToDoList).then(() => {
-//         this.setState({
-//             isRedirect: true
-//         })
-//     })
-// }
     
     render(){   
 

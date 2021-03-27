@@ -3,16 +3,19 @@ import "./toDoListItem.css";
 
 class ToDoListItem extends React.Component  {
     render(){
+        const { todoDescription, Deadline} = this.props;
         return(  
             <li>
             <div className="form-check"> 
                 <label className="form-check-label"> 
                     <input className="checkbox" type="checkbox" /> 
-                    For what reason would it be advisable.  
+                    { todoDescription } 
+                   
                     <i className="input-helper"></i>
                 </label> 
             </div> 
             <i className="remove mdi mdi-close-circle-outline"></i>
+             <div className="deadline"><i class="fa fa-exclamation" aria-hidden="true"></i> { Deadline } </div>
         </li>
         // <li className="completed">
         //     <div className="form-check"> <label className="form-check-label"> 
