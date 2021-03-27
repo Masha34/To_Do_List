@@ -19,3 +19,9 @@ export const deleteTask = (todoList) => {
         payload: todoList  
     }
 }
+export const searchTask = (task) => {
+    return {
+        type: "SEARCH_TASK",
+        payload: task  
+    }
+}

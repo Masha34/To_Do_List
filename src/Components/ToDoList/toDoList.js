@@ -1,12 +1,12 @@
 import React, {Fragment, useEffect} from "react"; //useEffect замінить componentDidMounth()
 import {connect} from "react-redux";
-import ToDoListItem from "./ToDoListItem/toDoListItem"
+import ToDoListItem from "./ToDoListItem/toDoListItem";
 import { updateDatabase } from "../../Services/api-service";
 import { getAllList } from "../../Actions/ToDoListActions";
 
 // const ContactList = ({List, onStatusChange, onDelete, onEdit }) => {
 // const ToDoList = ({List}) => {
-const ToDoList = ({List, getAllList}) => {
+const ToDoList = ({List, CurrentToDo, getAllList}) => {
     // console.log("ContactList ", List);
     useEffect(() => {
         // updateDatabase()
@@ -20,6 +20,7 @@ const ToDoList = ({List, getAllList}) => {
          return(
              <ToDoListItem todoDescription={contact.todoDescription} Deadline={contact.Deadline} />
          )
+        //  key={contact.todoDescription}
     })
     return(
         <Fragment>
@@ -30,12 +31,12 @@ const ToDoList = ({List, getAllList}) => {
                         <div className="col-md-12">
                             <div className="card px-3">
                                 <div className="card-body">
-                                    <div className="add-items d-flex"> <input type="text" className="form-control todo-list-input" placeholder="What do you need to do today?" />
-                                    </div>
                                     <div className="list-wrapper">
                                         <ul className="d-flex flex-column-reverse todo-list">
-                                           <ToDoListItem/>
-                                           { item.length > 0 ? item : <h2>Contact list is empty</h2> }
+                                           {/* <ToDoListItem/> */}
+                                           { item.length > 0 ? item : <h2>ToDo task list is empty</h2> }
+
+
                                         </ul>
                                     </div>
                                 </div>

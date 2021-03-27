@@ -29,11 +29,10 @@ class ToDoListItem extends React.Component  {
                 <label className="form-check-label"> 
                     <input className="checkbox" type="checkbox" /> 
                     { todoDescription } 
-                   
                     <i className="input-helper"></i>
                 </label> 
             </div> 
-            <div className="deadline"><i class="fa fa-exclamation" aria-hidden="true"></i> { Deadline } </div>
+            <div className="deadline"><i className="fa fa-exclamation" aria-hidden="true"></i> { Deadline } </div>
             <i onClick={this.onDeleteToDoTask} className="remove mdi mdi-close-circle-outline"></i>
             
         </li>
