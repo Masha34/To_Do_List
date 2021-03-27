@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import "./search.css";
 
 const Search = ({searchTask}) => {
+    
     const onSearch = (event) => {
         searchTask(event.target.value)
     }

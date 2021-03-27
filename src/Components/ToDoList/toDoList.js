@@ -34,18 +34,20 @@ const ToDoList = ({List, CurrentToDo, getAllList}) => {
                                     <div className="list-wrapper">
                                         <ul className="d-flex flex-column-reverse todo-list">
                                            {/* <ToDoListItem/> */}
-                                           { item.length > 0 ? item : <h2>ToDo task list is empty</h2> }
+                                           
+                                           {/* тут проблема з addToDo */}
+                                           {/* { item.length > 0 ? item : <h2>ToDo task list is empty</h2> } */}
 
-                                           {/* {CurrentToDo.length === 0 ? List.map(contact => {
+                                            {CurrentToDo.length === 0 ? List.map(contact => {
                                             return (
-                                                <ToDoListItem todoDescription={contact.todoDescription} {...contact} />
+                                                <ToDoListItem key={contact.Id} {...contact} />
                                             )
                                         }) 
                                         : CurrentToDo.map(contact => {
                                             return (
-                                                <ToDoListItem todoDescription={contact.todoDescription} {...contact} />
+                                                <ToDoListItem key={contact.Id} {...contact} />
                                             )
-                                        }) } */}
+                                        }) } 
 
                                         </ul>
                                     </div>
