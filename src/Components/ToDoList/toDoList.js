@@ -36,6 +36,16 @@ const ToDoList = ({List, CurrentToDo, getAllList}) => {
                                            {/* <ToDoListItem/> */}
                                            { item.length > 0 ? item : <h2>ToDo task list is empty</h2> }
 
+                                           {/* {CurrentToDo.length === 0 ? List.map(contact => {
+                                            return (
+                                                <ToDoListItem todoDescription={contact.todoDescription} {...contact} />
+                                            )
+                                        }) 
+                                        : CurrentToDo.map(contact => {
+                                            return (
+                                                <ToDoListItem todoDescription={contact.todoDescription} {...contact} />
+                                            )
+                                        }) } */}
 
                                         </ul>
                                     </div>
@@ -78,8 +88,8 @@ const ToDoList = ({List, CurrentToDo, getAllList}) => {
     )
 }
 const mapStateToProps = ({ToDoListReducer}) => {
-    const { List } = ToDoListReducer;
-    return { List }
+    const { List, CurrentToDo } = ToDoListReducer;
+    return { List, CurrentToDo }
 }
 const mapDispatchToProps = {
     getAllList

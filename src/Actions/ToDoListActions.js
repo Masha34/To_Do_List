@@ -1,6 +1,3 @@
-
-// import ToDoList from "../Components/ToDoList/toDoList";
-
 export const getAllList = (todoList) => {
     return {
         type: "TASK_LIST_LOADED",
@@ -23,5 +20,11 @@ export const searchTask = (task) => {
     return {
         type: "SEARCH_TASK",
         payload: task  
+    }
+}
+export const editToDo = (todoList) => {
+    return {
+        type: "EDIT_TASK",
+        payload: todoList  
     }
 }

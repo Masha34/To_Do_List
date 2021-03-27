@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./toDoListItem.css";
 import { connect } from "react-redux";
 import { deleteTask } from "../../../Actions/ToDoListActions";
@@ -33,6 +34,12 @@ class ToDoListItem extends React.Component  {
                 </label> 
             </div> 
             <div className="deadline"><i className="fa fa-exclamation" aria-hidden="true"></i> { Deadline } </div>
+            <Link to="/edit-todo" className="table-link">
+                        <span className="fa-stack">
+                            <i className="fa fa-square fa-stack-2x"></i>
+                            <i className="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </Link>
             <i onClick={this.onDeleteToDoTask} className="remove mdi mdi-close-circle-outline"></i>
             
         </li>
