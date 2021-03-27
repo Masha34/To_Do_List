@@ -18,7 +18,7 @@ const ToDoList = ({List, CurrentToDo, getAllList}) => {
     // })
     const item = List.map(contact => {
          return(
-             <ToDoListItem todoDescription={contact.todoDescription} Deadline={contact.Deadline} />
+             <ToDoListItem Id={contact.Id} key={contact.Id} todoDescription={contact.todoDescription} Deadline={contact.Deadline} />
          )
         //  key={contact.todoDescription}
     })

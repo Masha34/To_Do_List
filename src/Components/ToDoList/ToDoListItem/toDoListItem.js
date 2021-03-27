@@ -9,9 +9,9 @@ class ToDoListItem extends React.Component  {
 
     onDeleteToDoTask = () => {
         const { List, deleteTask } = this.props;
-        const contact = this.props;
-        const newList = List.filter((contact_item) => {
-            return contact_item.todoDescription !== contact.todoDescription;
+        const task = this.props;
+        const newList = List.filter((contact_task) => {
+            return contact_task.Id !== task.Id;
         });
         deleteTask(newList);
         saveData(newList).then(() => {

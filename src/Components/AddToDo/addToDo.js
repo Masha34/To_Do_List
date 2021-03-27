@@ -1,5 +1,5 @@
 import React, { Fragment} from "react";
-// import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 import { Redirect } from "react-router-dom";
 import "./addToDo.css";
 import { saveData } from "../../Services/api-service";
@@ -32,7 +32,8 @@ class AddToDo extends React.Component {
     addNewTasks = (event) =>{
         event.preventDefault();
         const { todoDescription, Deadline } = this.state;
-        const newItem = { todoDescription, Deadline };
+        const Id = uuidv4();
+        const newItem = { Id, todoDescription, Deadline };
         const { List, addNewTask } = this.props;
         addNewTask(newItem);
         List.push(newItem);
