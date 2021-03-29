@@ -16,7 +16,8 @@ const Search = ({searchTask}) => {
              <div className="row container d-flex justify-content-center">
                 <div className="col-lg-12">
                     <div className="search_input">
-                        <div className="add-items d-flex"> <input onChange={onSearch} type="text" className="form-control todo-list-input" placeholder="What do you need to do today?" />
+                        <div className="add-items d-flex"> <input onChange={onSearch} type="text" className="form-control todo-list-input" placeholder="Search" />
+                        {/* <div className="add-items d-flex"> <input onChange={onSearch} type="text" className="form-control todo-list-input" placeholder="What do you need to do today?" /> */}
                         </div>
                     </div>
                 </div>

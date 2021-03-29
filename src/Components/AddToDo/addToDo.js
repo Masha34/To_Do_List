@@ -44,31 +44,6 @@ class AddToDo extends React.Component {
         })
     }
 
-
-    // addNewContact = (event) => {
-    //     event.preventDefault();
-    //     console.log("addNewContact");
-    //     const { Avatar, Name, Role, Status, Email, Gender } = this.state;
-    //     let Created = Date.now();
-    //     const Id = uuidv4();
-    //     // Створимо новий обєкт
-    //     const newContact = { Id, Avatar, Name, Role, Status, Email, Gender, Created };
-    //     // console.log("newContact = ", newContact)
-
-    //     // const { onAddContact } = this.props;
-    //     const { List } = this.props;
-      
-    //     // List.push(newContact)
-
-    //      // addNewContact
-    //      const newList = [...List, newContact]
-
-    //     // onAddContact(newContact);
-    //     saveData(newList);
-    //     this.setState({
-    //         isRedirect: true
-    //     })
-    // }
     
     render(){   
 
@@ -91,7 +66,7 @@ class AddToDo extends React.Component {
                                         <div className="panel-body">
                                             <div className="pull-right">
                                             </div>
-                                            <div className="h4 text-center">Needed To Do Tasks</div>
+                                            <div className="h4 text-center">Add To Do Tasks</div>
                                             <div className="row pv-lg">
                                                 <div className="col-lg-2"></div>
                                                 <div className="col-lg-8">
@@ -101,7 +76,7 @@ class AddToDo extends React.Component {
                                                             <label className="col-sm-3 control-label" htmlFor="inputContact1">To Do Description</label>
                                                             <div className="col-sm-12">
                                                                 <input onChange={this.gettodoDescription} className="form-control" id="inputContact1"
-                                                                    type="text" placeholder="Name" name='name' />
+                                                                    type="text" placeholder="Name" name='' />
                                                             </div>
                                                         </div>
                                                         <div className="form-group">
@@ -109,7 +84,7 @@ class AddToDo extends React.Component {
                                                                 htmlFor="inputContact3">Deadline for this case</label>
                                                             <div className="col-sm-12">
                                                                 <input onChange={this.getDeadline} className="form-control" id="inputContact3"
-                                                                    type="text" placeholder="Role" name='role' />
+                                                                    type="text" placeholder="Role" name='' />
                                                             </div>
                                                         </div>
                                                         <div className="form-group">

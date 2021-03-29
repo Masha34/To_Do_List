@@ -1,4 +1,16 @@
 
-.deadline {
+/* .deadline {
   margin-left: 40px;
+} */
+.tt{
+  display: flex;
+  justify-content: space-around;
+}
+.rr{
+  display: flex;
+  justify-content: space-between;
+}
+.table-link{
+  margin-left: 30px;
+  margin-right: 30px;
 }

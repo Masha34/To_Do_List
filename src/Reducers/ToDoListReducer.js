@@ -41,12 +41,7 @@ const ToDoListReducer = (state = initialState, action) => {
                 }
             }
 
-            case "EDIT_TASK":
-                return {
-                    List: [
-                        ...state.List,
-                        action.payload]
-                }
+        
             
         default:
             return state;

@@ -4,8 +4,7 @@ import ToDoListItem from "./ToDoListItem/toDoListItem";
 import { updateDatabase } from "../../Services/api-service";
 import { getAllList } from "../../Actions/ToDoListActions";
 
-// const ContactList = ({List, onStatusChange, onDelete, onEdit }) => {
-// const ToDoList = ({List}) => {
+
 const ToDoList = ({List, CurrentToDo, getAllList}) => {
     // console.log("ContactList ", List);
     useEffect(() => {
@@ -20,7 +19,6 @@ const ToDoList = ({List, CurrentToDo, getAllList}) => {
          return(
              <ToDoListItem Id={contact.Id} key={contact.Id} todoDescription={contact.todoDescription} Deadline={contact.Deadline} />
          )
-        //  key={contact.todoDescription}
     })
     return(
         <Fragment>
@@ -34,11 +32,11 @@ const ToDoList = ({List, CurrentToDo, getAllList}) => {
                                     <div className="list-wrapper">
                                         <ul className="d-flex flex-column-reverse todo-list">
                                            {/* <ToDoListItem/> */}
-                                           
-                                           {/* тут проблема з addToDo */}
-                                           {/* { item.length > 0 ? item : <h2>ToDo task list is empty</h2> } */}
 
-                                            {CurrentToDo.length === 0 ? List.map(contact => {
+                                           {/* тут проблема з addToDo */}
+                                           { item.length > 0 ? item : <h2>ToDo task list is empty</h2> }
+
+                                            {/* {CurrentToDo.length === 0 ? List.map(contact => {
                                             return (
                                                 <ToDoListItem key={contact.Id} {...contact} />
                                             )
@@ -47,7 +45,7 @@ const ToDoList = ({List, CurrentToDo, getAllList}) => {
                                             return (
                                                 <ToDoListItem key={contact.Id} {...contact} />
                                             )
-                                        }) } 
+                                        }) }  */}
 
                                         </ul>
                                     </div>
